@@ -1,9 +1,13 @@
 # 支付宝首页渐变效果
 支付宝首页的列表是从界面的中间开始的，而上面的部分又是同tableView联动的，并且在滑动过程中，伴随着透明度和frame的调整，感觉上比较炫酷，针对这种效果，做了一个小demo。
 效果如下：
-![GitHub set up-w140](https://github.com/cusinkgetntly/AlipayHomePage/blob/master/1.gif)
+![GitHub set up-w60](https://github.com/cusinkgetntly/AlipayHomePage/blob/master/1.gif)
+
+
 ##注意
 这个demo实现的方法是在scrollView上添加了tableview的方法，tableView的滑动效果关闭，通过滚动ScrollView实现滚动tableView的效果。本demo把tableView分了一层出来，是为了不让scrollView和tableView的delegate不是同一个对象，方便处理。
+
+
 ##关键代码
 
 ```
